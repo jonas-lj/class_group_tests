@@ -1,0 +1,13 @@
+[package]
+name = "class_group_tests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+curv-kzen = "0.10.0"
+class_group = {  git = "https://github.com/ZenGo-X/class" }
+fastcrypto = {  git = "https://github.com/MystenLabs/fastcrypto", rev = "1af95a5c50217e507d11ff20cd9c178eb340543b", features = ["experimental"], package = "fastcrypto-vdf" }
+num-bigint = "0.4.4"
+num-traits = { version = "0.2.18", features = [] }
